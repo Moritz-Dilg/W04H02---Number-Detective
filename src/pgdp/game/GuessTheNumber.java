@@ -9,9 +9,9 @@ public class GuessTheNumber {
 
 	public void guessTheNumber() {
 		System.out.println("Hello, Number Detective!");
+		System.out.println("You have " + lives + " lives and " + points + " points.");
 
 		while (true) {
-			System.out.println("You have " + lives + " lives and " + points + " points.");
 			printMenu();
 			int choice = InputReader.readInt();
 			int randNum = 0;
@@ -86,6 +86,8 @@ public class GuessTheNumber {
 				System.out.println("You are leaving with " + points + " points!");
 				return;
 			}
+
+			System.out.println("You have " + lives + " lives and " + points + " points.");
 		}
 	}
 
