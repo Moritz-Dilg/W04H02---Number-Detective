@@ -79,7 +79,7 @@ public class GuessTheNumber {
 			}
 
 			if (attempt != -1) {
-				System.out.println("Sorry, you've used all attempts. The correct number was " + randNum + "."+lives);
+				System.out.println("Sorry, you've used all attempts. The correct number was " + randNum + ".");
 				lives--;
 			}
 
