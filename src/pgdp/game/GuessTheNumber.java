@@ -54,9 +54,9 @@ public class GuessTheNumber {
 				}
 				System.out.println("(" + attempt + "/" + maxAttempts + ") Enter your guess:");
 				int guess = InputReader.readInt();
-				if (guess < randNum) System.out.println("The number is higher.");
-				else if (guess > randNum) System.out.println("The number is lower.");
-				else {
+				if (guess < randNum && attempt != maxAttempts) System.out.println("The number is higher.");
+				else if (guess > randNum && attempt != maxAttempts) System.out.println("The number is lower.");
+				else if (attempt != maxAttempts) {
 					System.out.println("Congrats! You guessed the correct number.");
 					switch (choice) {
 						case 1:
