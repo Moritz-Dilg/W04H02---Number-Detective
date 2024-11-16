@@ -63,7 +63,7 @@ public class GuessTheNumber {
 				System.out.println("(" + nAttempts + "/" + maxNAttempts + ") Enter your guess:");
 				int guess = InputReader.readInt();
 				if (guess == randNum) {
-					System.out.println("Congrats! You guessed the correct number!");
+					System.out.println("Congrats! You guessed the correct number.");
 					switch (difficultyLevel) {
 						case 1:
 							points += 200;
