@@ -44,7 +44,7 @@ public class GuessTheNumber {
 
 			int nAttempts;
 			for (nAttempts = 1; nAttempts <= maxNAttempts; nAttempts++) {
-				if (nAttempts == maxNAttempts) {
+				if (nAttempts == maxNAttempts && points >= 600) {
 					System.out.println("LAST ATTEMPT! Do you want to buy a hint for 600 points? (1) yes (2) no");
 					int hintChoice;
 					while (true) {
